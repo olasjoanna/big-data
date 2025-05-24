@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Rockstar Data Pipeline" id="0hFgL3zqkLNT8CQItcc7">
+    <mxGraphModel dx="1037" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Data Ingestion -->
+        <mxCell id="2" value="1. Zbiór danych" style="shape=rectangle;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Validation -->
+        <mxCell id="3" value="2. Walidacja danych" style="shape=rectangle;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Transformation -->
+        <mxCell id="4" value="3. Transformacja danych" style="shape=rectangle;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Analysis -->
+        <mxCell id="5" value="4. Analiza błędów i satysfakcji" style="shape=rectangle;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="660" y="40" width="220" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Visualization -->
+        <mxCell id="6" value="5. Wizualizacja wyników" style="shape=rectangle;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="920" y="40" width="180" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- JIRA/Notifications -->
+        <mxCell id="7" value="6. Notyfikacje / JIRA" style="shape=rectangle;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="40" width="160" height="60" as="geometry"/>
+        </mxCell>
+        
+        <!-- Logging -->
+        <mxCell id="8" value="Logowanie i Monitoring" style="shape=ellipse;fillColor=#f5f5f5;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="160" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Infra as Code -->
+        <mxCell id="9" value="Infra as Code (Terraform)" style="shape=hexagon;fillColor=#d0e0e3;strokeColor=#3c78d8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="160" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Connectors -->
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#000000;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#000000;" edge="1" source="3" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#000000;" edge="1" source="4" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#000000;" edge="1" source="5" target="6" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#000000;" edge="1" source="6" target="7" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#888888;" edge="1" source="4" target="8" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#888888;" edge="1" source="5" target="8" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#888888;" edge="1" source="2" target="9" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
