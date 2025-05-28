@@ -1,0 +1,9 @@
+Jobs – lista wszystkich uruchomionych jobs (status, czas trwania, liczba)
+
+Stages – etapy przetwarzania (aktywny, zakończony, oczekujący; czas, ilość danych, przemieszczenia)
+
+Storage – informacje o przechowywanych RDD/DataFrame (nazwa, typ, liczba partycji, rozmiar)
+
+Executors – dane o executorach (zużycie pamięci, czas CPU, liczba tasków, rozkład obciążenia, dystrybucja danych)
+
+SQL/DataFrame – szczegóły zapytań (przekształcenia, czas wykonania)
