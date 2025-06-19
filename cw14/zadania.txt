@@ -1,0 +1,76 @@
+ZADANIE 2:
+Delta Lake:
+-domyślna integracja z databricks
+-Dobra Skalowalność
+-Obsługa danych dynamicznych
+
+Apache Iceberg:
+-możliwa, ale niedomyślna integracja z databricks
+-Bardzo dobra skalowalność
+-Lepsza obłsuga dużych zbiorów danych dynamicznych
+
+Delta Lake – lepsze korzystamy głównie z Databricks + Spark i chcemy szybko wdrożyć lakehouse.
+
+Iceberg – lepszy dla środowisk multi-engine i dużych zbiorów.
+
+###########################################################################################################################
+
+ZADANIE 3:
+
+Zwiększony koszt przechowywania
+wielokrotne kopiowanie zwiększa koszty użytku
+
+Overengineering dla małych projektów
+czasem tak duża architektura nie jest konieczna
+
+Nadmierne opóźnienia
+rozbudowana architektura utrudnia dzialanie real-time
+
+Problemy z zarządzaniem wersjami
+Trudno wersjonować przez wiele warstw
+
+Nieprzystosowane do dynamicznych źródeł danych
+Ciągła zmiana schematów utrudnia zarządzanie
+
+Zbyt sztywny model
+Każdy przypadek musi wpasować się w Bronze/Silver/Gold
+
+Wysoka krzywa uczenia się
+rozbudowana i skomplikowana architektura
+
+Brak wartości biznesowej z Bronze layer
+Dane są często bezużyteczne bez przetworzenia
+
+Trudność w debugowaniu danych
+utrudnia to wiele warstw
+
+Trudność w analizie przyczyn błędów
+wiele warstw utrudnia debugging
+
+Problemy z synchronizacją warstw
+przetwarzanie danych bez synchronizacji powoduje duplikacje
+
+Powielanie danych
+Duplikacja danych wprowadza ryzyko niespójności.
+
+Wydłużony czas przetwarzania
+Dane muszą przejść przez wiele warstw
+
+Złożoność operacyjna
+Więcej pipeline’ów ETL = większa złożoność
+
+Zła jakość danych przenosi się między warstwami
+Błędy z Bronze często wchodzą do Silver lub Gold
+
+Większy ślad obliczeniowy
+więcej zasobów zużytych na wielokrotne obliczenia
+
+Przejrzystość danych spada
+dane są skomplikowane dla non-tech osób
+
+Brak standaryzacji między zespołami
+rozne implementacje warstw mogą wprowadzać chaos
+
+Zwiększone wymagania testowania
+Każda warstwa wymaga własnych testów
+
